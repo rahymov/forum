@@ -5,12 +5,25 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+     <nav class="navbar navbar-default navbar-fixed-top" style="background: rgb(0, 249, 172)">
+      <div class="container">
+        <%= link_to "YAR Forum", root_path, class: "navbar-brand" %>
+        <ul class="nav navbar-nav navbar-right"><% if user_signed_in? %>
+          <li class="newpost" id="newpost"><%= link_to "New Post", new_post_path %></li><%end%></ul>
+      </div>
+    </nav>
+  	<div class="wrapper">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+    
   </body>
 </html>

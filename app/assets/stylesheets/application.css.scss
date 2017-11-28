@@ -15,3 +15,53 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap"; 
+
+body
+{
+  font-family: 'Raleway', sans-serif;
+  background: #e8eaed;
+}
+.navbar{
+	.container{
+		.navbar-brand{
+			color: black;
+			font-weight: 1000;
+			font-style: bold;
+		}
+		.navbar-nav .nav .navbar-right
+		{
+			#newpost
+			{
+				a
+				{
+					color: black;
+				}
+			}
+		}	
+	}
+}
+#posts{
+	background: white;
+	
+	border-radius: 1em;
+	width: 70%;
+	.post{
+		display: inline-block;
+		border-bottom: 1px solid #d1d1d1;
+		width: 70%; 
+		margin: 0 10% 0 3%;
+		padding: .7em 0 .2em 5em;
+	}
+}
+
+#post_content
+{
+	background: white;
+	padding: 2em 5%;
+	border-radius: .7em;
+	margin: 0 10% 0 8%;
+	p
+	{
+		color: #4f5150;
+	}
+}
