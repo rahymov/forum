@@ -1,6 +1,5 @@
 
-<h1>Posts</h1>
-	<div id="posts">
+<div id="posts" class="container">
 	<% @posts.each do |post|%>
 		<div class="post">
 			<h3><%=link_to post.title, post %></h3>

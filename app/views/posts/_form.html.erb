@@ -1,6 +1,7 @@
-
+<div class="form-group" id="form">
 	<%= simple_form_for @post do |f| %>
-		<%= f.input :title %>
-		<%= f.input :content %>
+		<%= f.input :title, class: "form-control" %>
+		<%= f.input :content, class: "form-control" %><br>
 		<%= f.submit class: "btn btn-primary" %>
 	<% end %>
+</div>
